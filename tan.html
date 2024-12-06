@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Document</title>
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      /* background-color: #1d002c; */
+    }
+    .parallax-home{
+      width: 100%;
+      height: 100vh;
+      background-image: url(sky.png);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .parallax-home .bg{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+    }
+    /* 第一部分 */
+    .parallax-home .bg1{
+      background-image: url(moon.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg2{
+      background-image: url(water1.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg3{
+      background-image: url(center-city.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg4{
+      background-image: url(right-city.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg5{
+      background-image: url(left-city.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg6{
+      background-image: url(train.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg7{
+      background-image: url(rail.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* .parallax-home .bg8{
+      background-image: url(Home-Images/hill-left-1.png);
+      background-size: cover;
+      background-position: center;
+    } */
+
+    .parallax-home .bg9{
+      /* width: 110%; */
+      background-image: url(hill-right-1.png);
+      background-size: cover;
+      background-position: center;
+    }
+    /* 第二部分 */
+    .about{
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      background-color: #1d002c;
+      position: relative;
+    }
+
+    .about .bg{
+      width: 100%;
+      height: 110vh;
+      position: absolute;
+    }
+
+    .about .bg11{
+      background-image: url(waterfall1.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about .bg12{
+      background-image: url(desert-sky.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg13{
+      background-image: url(desert-moon.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg14{
+      background-image: url(desert-NoSky.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg15{
+      background-image: url(desert-rock.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg16{
+      background-image: url(water2.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg17{
+      background-image: url(man.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg18{
+      background-image: url(grass.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about .box{
+      width: 50%;
+      height: 21%;
+      background-color: #1d002c;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+    }
+    /* ----------------------------------- */
+    @media (min-width: 1200px) {
+      .box h2{
+        color: #fff;
+        font-size: 50px;
+      }
+
+      .box p{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box-text{
+        padding: 50px;
+      }
+    }
+
+    @media (min-width: 700px) and (max-width:1199px){
+      .box h2{
+        color: #fff;
+        font-size: 40px;
+      }
+      .box-img{
+        display: none;
+      }
+      .box p{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box-text{
+        padding: 0 50px;
+      }
+    }
+
+    @media (max-width: 699px) {
+      .box {
+        width: 100%;
+        height: 100vh;
+        background-color: #121137;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .box h2{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box img{
+        pointer-events: none;
+        width: 150px;
+      }
+
+      .box-img{
+        display: none;
+      }
+      .box p{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box-text{
+        padding: 0 50px;
+      }
+    }
+
+    .box img{
+      pointer-events: none;
+    }
+    
+    .box {
+      width: 100%;
+      height: 100vh;
+      background-color: #121137;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .im {
+      width: 100%;
+      height: 100vh;
+      background-image: url('tan3.png'); /* 設定背景圖片 */
+      background-repeat: no-repeat; /* 不重複 */
+      background-position: center; /* 背景居中 */
+      background-size: cover; /* 背景覆蓋整個區塊 */
+      background-attachment: fixed; /* 背景固定 */
+    }
+
+    .box-img img{
+      height: 100vh;
+    }
+
+    .hom{
+      width: 100%;
+      height: 10vh;
+      background-color: #190543;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home-link{
+      color: #fff;
+      font-size: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="hom">
+    <a href="https://cccc111000.github.io/car-report.github.io/car" class="home-link">
+      <i class="fas fa-home"></i>
+    </a>
+  </header>
+
+  <section class="parallax-home">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
+    <div class="bg bg6"></div>
+    <div class="bg bg7"></div>
+    <div class="bg bg8"></div>
+    <div class="bg bg9"></div>
+    <div class="bg bg10"></div>
+  </section>
+
+  <section class="about">
+    <div class="box"></div>
+    <div class="bg bg11"></div>
+    <div class="bg bg12"></div>
+    <div class="bg bg13"></div>
+    <div class="bg bg14"></div>
+    <div class="bg bg15"></div>
+    <div class="bg bg16"></div>
+    <div class="bg bg17"></div>
+    <div class="bg bg18"></div>
+  </section>
+
+  <div class="continer">
+    <div class="box"><img src="tan.png" alt=""><h2>認識我</h2><img src="tan.png" alt=""></div>
+    <div class="im"></div> <!-- 第一個背景固定區塊 -->
+    <div class="box">
+        <div class="box-img"><img src="tan.gif" alt=""></div>
+        <div class="box-text">
+          <h2>自我介紹</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur modi perferendis est officia nostrum quo quis doloremque, reiciendis sunt natus aut velit aspernatur. Nihil, accusantium officia pariatur maiores hic officiis ratione earum temporibus minima placeat maxime, eligendi !</p>
+        </div>
+        <div class="box-img"><img src="tan.gif" alt=""></div>    
+   </div>
+  </div>
+  
+
+
+  <script>
+    let moon = document.querySelector(".bg1")
+    let train = document.querySelector(".bg6")
+    let moon2 = document.querySelector(".bg13")
+    let man = document.querySelector(".bg17")
+
+    window.addEventListener("scroll",()=>{
+      let value = window.scrollY
+      
+      moon.style.top = value * 1.5 + "px"
+      train.style.left = value * 0.9 + "px"
+
+      const maxTopValue = 500; // 設置 moon2 的最大 top 值
+      let newTop = value * 0.5;
+      if (newTop > maxTopValue) {
+          newTop = maxTopValue; // 當超過最大值時，保持在最大值
+      }
+      moon2.style.top = newTop + "px";
+
+      man.style.left = value * 0.5 + "px"
+    })
+  </script>
+</body>
+</html>
