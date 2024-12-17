@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>譚皓自我介紹</title>
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      background-color: #121137;
+    }
+    .parallax-home{
+      width: 100%;
+      height: 100vh;
+      background-image: url(sky.png);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .parallax-home .bg{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+    }
+    /* 第一部分 */
+    .parallax-home .bg1{
+      background-image: url(moon.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg2{
+      background-image: url(water1.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg3{
+      background-image: url(center-city.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg4{
+      background-image: url(right-city.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg5{
+      background-image: url(left-city.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg6{
+      background-image: url(train.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .parallax-home .bg7{
+      background-image: url(rail.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* .parallax-home .bg8{
+      background-image: url(Home-Images/hill-left-1.png);
+      background-size: cover;
+      background-position: center;
+    } */
+
+    .parallax-home .bg9{
+      /* width: 110%; */
+      background-image: url(hill-right-1.png);
+      background-size: cover;
+      background-position: center;
+    }
+    /* 第二部分 */
+    .about{
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      background-color: #1d002c;
+      position: relative;
+    }
+
+    .about .bg{
+      width: 100%;
+      height: 110vh;
+      position: absolute;
+    }
+
+    .about .bg11{
+      background-image: url(waterfall1.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about .bg12{
+      background-image: url(desert-sky.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg13{
+      background-image: url(desert-moon.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg14{
+      background-image: url(desert-NoSky.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg15{
+      background-image: url(desert-rock.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg16{
+      background-image: url(water2.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg17{
+      background-image: url(man.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .about .bg18{
+      background-image: url(grass.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about .box{
+      width: 50%;
+      height: 21%;
+      background-color: #1d002c;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+    }
+    /* ----------------------------------- */
+    @media (min-width: 1200px) {
+      .box h2{
+        color: #fff;
+        font-size: 50px;
+      }
+
+      .box p{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box-text{
+        padding: 50px;
+      }
+    }
+
+    @media (min-width: 700px) and (max-width:1199px){
+      .box h2{
+        color: #fff;
+        font-size: 40px;
+      }
+      .box-img{
+        display: none;
+      }
+      .box p{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box-text{
+        padding: 0 50px;
+      }
+      .continer{
+        padding-top: 50px;
+      }
+    }
+
+    @media (max-width: 699px) {
+      .box {
+        width: 100%;
+        height: 100vh;
+        background-color: #121137;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .box h2{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box img{
+        pointer-events: none;
+        width: 150px;
+      }
+
+      .box-img{
+        display: none;
+      }
+      .box p{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .box-text{
+        padding: 0 50px;
+      }
+
+      .continer{
+        padding-top: 50px;
+      }
+    }
+
+    .box img{
+      pointer-events: none;
+    }
+    
+    .box {
+      width: 100%;
+      height: 100vh;
+      background-color: #121137;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box .title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box .text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .hom{
+      width: 100%;
+      height: 10vh;
+      background-color: #190543;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home-link{
+      color: #fff;
+      font-size: 50px;
+    }
+
+    @media (min-width: 900px){
+    .footer{
+    background-color: #4B0082;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .footer-item{
+    width: 90%;
+    display: flex;
+    margin: 20px;
+    overflow: hidden;
+    }
+
+    .footer-text{
+    width: 400px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footer-item h2{
+    color: #fff;
+    }
+
+    .footer-item p{
+    color: #fff;
+    }
+
+    .footer-item a{
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    }
+
+    .footer img{
+    width: 40px;
+    }
+
+    .footer-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #fff;
+    padding: 25px 0;
+    margin: 25px 0;
+    }
+
+    .footer-logo img{
+    width: 30%;
+    }
+}
+
+@media (max-width: 900px){
+    .footer{
+    background-color: #4B0082;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    overflow-x: hidden;
+    }
+
+    .footer-item{
+    width: 90%;
+    display: flex;
+    margin: 20px;
+    }
+    /* 上面別名 */
+    .t{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .footer-text{
+    width: 90%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footer-item h2{
+    color: #fff;
+    }
+
+    .footer-item p{
+    color: #fff;
+    }
+
+    .footer-item a{
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    }
+
+    .footer img{
+    width: 40px;
+    }
+
+    .footer-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #fff;
+    padding: 25px 0;
+    margin: 25px 0;
+    }
+
+    .footer-logo img{
+    width: 50%;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+  <header class="hom">
+    <a href="https://cccc111000.github.io/car-report.github.io/car" class="home-link">
+      <i class="fas fa-home"></i>
+    </a>
+  </header>
+
+  <section class="parallax-home">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
+    <div class="bg bg6"></div>
+    <div class="bg bg7"></div>
+    <div class="bg bg8"></div>
+    <div class="bg bg9"></div>
+    <div class="bg bg10"></div>
+  </section>
+
+  <section class="about">
+    <div class="box"></div>
+    <div class="bg bg11"></div>
+    <div class="bg bg12"></div>
+    <div class="bg bg13"></div>
+    <div class="bg bg14"></div>
+    <div class="bg bg15"></div>
+    <div class="bg bg16"></div>
+    <div class="bg bg17"></div>
+    <div class="bg bg18"></div>
+  </section>
+
+  <div class="continer">
+    <div class="box">
+      <!-- <div class="title">
+        <img src="tan.png" alt=""><img src="tan.png" alt=""><img src="tan.png" alt="">
+      </div> -->
+      <div class="text">
+        <h2>自我介紹</h2>
+          <p>哈囉大家好！我是譚O號，名字只有兩個字，讓我一度懷疑是不是我出生時爸媽忙著追劇，偷懶少取了一個字 😂。不過這讓我多了一個優勢寫名子時特別快！我是早上起床臉臭到能嚇壞鬧鐘的人，偶爾會和被窩談戀愛到忘記上課，但別擔心，我可是個認真的打工小達人，因為錢比朋友更重要啊（開玩笑啦🤣）。我的特技是用微波爐煮出米其林風味的泡麵，別看我名字短，才華可是滿到溢出來喔！</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-item">
+      <img src="footer.png" alt="">
+      <h2>所在地區/語言</h2>
+    </div>
+    <div class="footer-item t">
+      <div class="footer-text">
+        <h2>電子報</h2>
+        <p>隨時掌握新品動態</p>
+        <a href="#">訂閱</a>
+      </div>
+      <div class="footer-text">
+        <h2>聯繫我們</h2>
+        <p>有任何疑問</p>
+        <a href="#">聯繫表格</a>
+      </div>
+      <div class="footer-text">
+        <h2>社群媒體</h2>
+        <p>透過以下平台獲得更多資訊</p>
+        <div class="footer-img">
+          <a href="#"><img src="footer1.png" alt=""></a>
+          <a href="#"><img src="footer2.png" alt=""></a>
+          <a href="#"><img src="footer3.png" alt=""></a>
+          <a href="#"><img src="footer4.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-item">
+      <div class="footer-logo"><img src="footer-logo.png" alt=""></div>
+    </div>
+  </div>
+  
+
+
+  <script>
+    let moon = document.querySelector(".bg1")
+    let train = document.querySelector(".bg6")
+    let moon2 = document.querySelector(".bg13")
+    let man = document.querySelector(".bg17")
+
+    window.addEventListener("scroll",()=>{
+      let value = window.scrollY
+      
+      moon.style.top = value * 1.5 + "px"
+      train.style.left = value * 0.9 + "px"
+
+      const maxTopValue = 500; // 設置 moon2 的最大 top 值
+      let newTop = value * 0.5;
+      if (newTop > maxTopValue) {
+          newTop = maxTopValue; // 當超過最大值時，保持在最大值
+      }
+      moon2.style.top = newTop + "px";
+
+      man.style.left = value * 0.5 + "px"
+    })
+  </script>
+</body>
+</html>
