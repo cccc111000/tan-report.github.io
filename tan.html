@@ -152,106 +152,90 @@
     }
     /* ----------------------------------- */
     @media (min-width: 1200px) {
-      .box h2{
-        color: #fff;
-        font-size: 50px;
-      }
-
-      .box p{
-        color: #fff;
-        font-size: 30px;
-      }
-
-      .box-text{
-        padding: 50px;
-      }
-    }
-
-    @media (min-width: 700px) and (max-width:1199px){
-      .box h2{
-        color: #fff;
-        font-size: 40px;
-      }
-      .box-img{
-        display: none;
-      }
-      .box p{
-        color: #fff;
-        font-size: 30px;
-      }
-
-      .box-text{
-        padding: 0 50px;
-      }
       .continer{
-        padding-top: 50px;
-      }
-    }
-
-    @media (max-width: 699px) {
-      .box {
         width: 100%;
         height: 100vh;
-        background-color: #121137;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 100px;
       }
-      .box h2{
+      .continer h2{
+        color: #fff;
+        font-size: 50px;
+      }
+
+      .continer p{
         color: #fff;
         font-size: 30px;
       }
+    }
 
-      .box img{
-        pointer-events: none;
-        width: 150px;
-      }
-
-      .box-img{
-        display: none;
-      }
-      .box p{
-        color: #fff;
-        font-size: 30px;
-      }
-
-      .box-text{
-        padding: 0 50px;
-      }
-
+    @media (min-width: 700px) and (max-width:1199px){
       .continer{
-        padding-top: 50px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+      }
+      .continer h2{
+        color: #fff;
+        font-size: 50px;
+      }
+
+      .continer p{
+        color: #fff;
+        font-size: 35px;
       }
     }
 
-    .box img{
-      pointer-events: none;
+    @media (max-width: 699px) {
+      .continer{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+      .continer h2{
+        color: #fff;
+        font-size: 30px;
+      }
+
+      .continer p{
+        color: #fff;
+        font-size: 20px;
+      }
     }
+
     
-    .box {
-      width: 100%;
-      height: 100vh;
-      background-color: #121137;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .box .title{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .box .text{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 50px;
-    }
 
     .hom{
       width: 100%;
@@ -428,20 +412,14 @@
   </section>
 
   <div class="continer">
-    <div class="box">
-      <!-- <div class="title">
-        <img src="tan.png" alt=""><img src="tan.png" alt=""><img src="tan.png" alt="">
-      </div> -->
-      <div class="text">
-        <h2>自我介紹</h2>
-          <p>哈囉大家好！我是譚O號，名字只有兩個字，讓我一度懷疑是不是我出生時爸媽忙著追劇，偷懶少取了一個字 😂。不過這讓我多了一個優勢寫名子時特別快！我是早上起床臉臭到能嚇壞鬧鐘的人，偶爾會和被窩談戀愛到忘記上課，但別擔心，我可是個認真的打工小達人，因為錢比朋友更重要啊（開玩笑啦🤣）。我的特技是用微波爐煮出米其林風味的泡麵，別看我名字短，才華可是滿到溢出來喔！</p>
-      </div>
+    <div class="text">
+      <h2>自我介紹</h2>
+        <p>哈囉大家好！我是譚O號，名字只有兩個字，讓我一度懷疑是不是我出生時爸媽忙著追劇，偷懶少取了一個字 😂。不過這讓我多了一個優勢寫名子時特別快！我是早上起床臉臭到能嚇壞鬧鐘的人，偶爾會和被窩談戀愛到忘記上課，但別擔心，我可是個認真的打工小達人，因為錢比朋友更重要啊（開玩笑啦🤣）。我的特技是用微波爐煮出米其林風味的泡麵，別看我名字短，才華可是滿到溢出來喔！</p>
     </div>
   </div>
 
   <div class="footer">
     <div class="footer-item">
-      <img src="footer.png" alt="">
       <h2>所在地區/語言</h2>
     </div>
     <div class="footer-item t">
